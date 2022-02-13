@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+  
+  <head>
+  <style type="text/css">
+  .auto-style1 {
+	  font-size: large;
+	  text-decoration: underline;
+	  color: #FF0000;
+  }
+  .auto-style2 {
+	  font-size: xx-large;
+	font-family: メイリオ;
+}
+  .auto-style3 {
+	  font-size: x-large;
+	  margin-left: 0px;
+	font-family: メイリオ;
+}
+  .auto-style4 {
+	font-family: メイリオ;
+}
+.auto-style5 {
+	font-size: large;
+	text-decoration: underline;
+	color: #FF0000;
+	font-family: メイリオ;
+}
+.auto-style6 {
+	background-color: #FFFF00;
+}
+  </style>
+  <title>びっくり工作学年ごと仕分けツール</title>
+  </head>
+
+  <body>
+  <center>
+    <script type="text/javascript">
+      function handan(shadanki){
+        if(shadanki == 1){
+           document.getElementById("kekka").innerHTML = "あなたは1番もしくは2番テーブルへ行ってください";
+        } else {
+           document.getElementById("kekka").innerHTML = "あなたは3番もしくは4番テーブルへ行ってください";
+        }
+      }
+    </script>
+    <p class="auto-style2"><strong>びっくり工作学年ごと仕分けツール</strong></p>
+	<hr><span class="auto-style5"><strong>一年生の場合は、1と入力してください。</strong></span><strong><br class="auto-style4">
+	<br class="auto-style5"></strong><span class="auto-style1">
+	<span class="auto-style4"><strong>
+	一年生ではない場合は2と入力してください。</strong></span><hr></span><br class="auto-style4">
+    <input type="text" id="num" class="auto-style4">
+    <input type="button" value="判断" onclick="handan(num.value)" class="auto-style4">　<div id="kekka">
+		<strong><span class="auto-style6">ここに結果が表示されます</span></strong><br class="auto-style4">
+		<form method="post">
+		</form>
+	</div>
+  <p>
+  <form method="post">
+  </form>
+	</p>
+  <p>
+  <form method="post">
+	  <button class="auto-style3" name="Abutton1" style="width: 155px; height: 38px">
+	  リセット</button>
+  </form>
+  </p></center>
+  <hr>
+  </body>
+</html>
